@@ -1,0 +1,128 @@
+.main-menu{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    transition: background-color 1s ease;
+}
+
+.main-menu li{
+    margin: 0px;
+    padding: 10px 20px;
+    list-style-type: none;
+    transition: margin 0.5s ease;
+}
+
+.main-menu li a{
+    color: white;
+    display: block;
+    ;
+    text-decoration: none;
+    
+}
+
+.main {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "import-now"
+        "models"
+        "about-us"
+        "footer";
+    gap: 10px;
+    background-color: whitesmoke;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    min-height: 6vh;
+    background-color: black;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url('img/GLE.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    min-height: 30vh;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.import-now{
+    grid-area: import-now;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.import-now div{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.import-now div:hover{
+    background-color: white;
+    color: black;
+}
+
+.about-us{
+    grid-area: about-us;
+    
+}
+.footer {
+    grid-area: footer;
+}
+.models {
+    grid-area: models;
+}
+
+.models div{
+    display: flex;
+    flex-wrap: row wrap;
+}
+
+.models div article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    transition: box-shadow 0.5s ease;
+}
+
+.header h1 {
+    font-size: 2em;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin: 0px;
+    padding: 10px;
+}
+.header p{
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin: 0px;
+    padding: 10px;
+}
